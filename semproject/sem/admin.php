@@ -15,12 +15,12 @@ session_start();
     <nav id="adnv">
             <!-- <h2>Rental System</h2> -->
             <div class="logo">
-            <a href="admin.php"><img src="image/logo.png" alt="logo"></a>
+            <a href="admin_home.php"><img src="image/logo.png" alt="logo"></a>
             </div>
          <ul>
-                <li><a href="admin.php">HOME</a> </li>
+                <li><a href="admin_home.php">HOME</a> </li>
                 <!-- <li><a href="#Home">BUY</a> </li> -->
-                <li><a href="#">Owner</a> </li>
+                <li><a href="admin.php">Total User</a> </li>
                 <li><a href="#">Renter</a> </li>
                <!-- <li class="search"><input id="search" type="search" placeholder="search rooom by Address"></li> -->
          </ul>
