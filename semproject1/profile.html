@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        object-fit: cover;    
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    
+    }
+    img:hover{
+        height: 250px;
+        width: 250px;
+    }
+      p{
+        text-align: center;
+        color: rgb(255, 229, 180);
+    }
+ 
+    body{
+        background-image: url(image/bgprofile.png);
+        background-size: 100%;
+        background-size:auto;
+        background-repeat: no-repeat;
+        color: rgb(255, 255, 255);
+
+            }
+   .container{
+
+        display:block;
+        width: 200px;
+        border: solid  ;
+        border-radius: 20px;
+        border-color:rgba(127, 246, 255, 0.475);
+        background-color: rgba(73, 70, 70, 0.364);
+        
+        
+    }
+    button{
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 3px;
+
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: solid;
+        color: wheat;
+        background-color: rgb(73, 70, 70);
+    }
+    button:hover{
+        cursor: pointer;
+       background-color: beige;
+       color: rgb(211, 189, 149);
+    }
+     button:active{
+        color: red;
+     }
+     .room{
+        font-size: large;
+    margin: 20px;
+    border: solid  ;
+    border-radius: 20px;
+    border-color:rgba(127, 246, 255, 0.475);
+    background-color: rgba(73, 70, 70, 0.364);
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between px;
+    
+    
+}
+.col{
+    border: solid;
+    border-radius: 10px;
+    margin-left: 20px;
+    border-color: aqua;
+    flex-basis: 40%;
+    background-color:rgba(211, 189, 149, 0.529);
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+         
+</style>
+<body>
+    <!-- <?php 
+    include "db.php";
+    $query = "SELECT * FROM ";
+        $result = mysqli_query($con, $query);
+        while ($row = mysqli_fetch_assoc($result)) {
+            $storyTitle = $row['title'];
+            $abstract = $row['abstract'];
+            $genre = $row['genre'];
+            // $language = $row['language'];
+            $created = $row['created_at'];
+            $updated = $row['updated_at'];
+            $status = $row['status'];
+            $id = $row['id'];
+            $user_id = $row['user_id'];
+            $state = $row['state'];
+            $cvrImgPath = "img/ . {$row['cover_image']}";
+
+            $query1 = "SELECT * FROM info where id= $user_id";
+            $result1 = mysqli_query($con, $query1);
+            $row1 = mysqli_fetch_assoc($result1);
+            $profileImgPath = !empty($row1['avatar']) ? 'profileImages/' . $row1['avatar'] : 'images/ppp.png';
+
+            $uname = $row1['uname'];
+
+    
+    ?> -->
+    
+    <center><img src="image/bs.jpg" alt="user_img">
+    <div class="container">
+    <p><b>Name: <br><br>
+        email: <br><br>
+        phone: <br><br>
+        Address:</b> <br><br>
+        </p>
+    
+<button onclick="logout()">logout </button> &nbsp;
+<button onclick="edit()"> Edit </button>
+
+</div>
+<div class="room">
+<p><b>
+booked room by you:
+</b></p>
+<div class="row">
+    <div class="col">
+<section> <strong>
+    &nbsp;&nbsp;&nbsp;owners details: <br><br></strong>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vitae esse quam numquam voluptatum pariatur sunt ipsa corporis. Voluptatem nemo expedita quia culpa et impedit fugit ratione dolor, cumque inventore!
+</section>
+</div>
+<div class="col">
+<section><strong>
+    &nbsp;&nbsp;&nbsp;property details: <br><br></strong>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus magnam rerum aut cumque ad quisquam reprehenderit neque vitae adipisci tenetur provident, ratione facilis optio quas dolorum a tempora exercitationem corporis?
+</section>
+</div>
+</div>
+
+
+</center>
+</body>
+<script>
+    function logout(){
+          alert("your alc is Logout!");
+      }
+      function edit(){
+          alert("your alc is ready to edit!");
+      }
+  </script>
+</html>

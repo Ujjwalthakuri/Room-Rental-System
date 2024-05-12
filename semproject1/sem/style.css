@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/*------------------------ home pge started ----------------------*/
+/* header started */
+.head{
+    /* position:fixed; */
+}
+/* top navigation started */
+.top-navigation{
+    margin:0px;
+    padding:10px;
+    background-color:black;
+    color:red;
+    display:flex;
+    justify-content:space-between;
+    /* padding-right:50px;     */
+}
+/*---------- login-form started ----------*/
+
+.login-form{
+    /* display:none; */
+    width:25%;
+    height:auto;
+    border: 2px solid white;
+    /* background:transparent; */
+    background-color:white;
+    padding:10px;
+    padding-top:30px;
+    /* color:white; */
+    text-align:center;
+    /* align-items: center; */
+    position:absolute;
+    top:5%;
+    right:12%;
+    border-radius:10px;
+    box-shadow: 0 0 30px 0px rgba(0,0,0,0.5);
+    display:none;
+    pointer-events: none;
+}
+ .show {
+    display:block;
+    pointer-events: auto;
+}
+ .form-body h1{
+    font-size:3.5vmin;
+    font-weight: bold;
+    color:rgb(169, 7, 184);
+ }
+ .login-form .form-body{
+    padding-top:10px;
+     /* padding-bottom:20px; */
+
+ }
+ .form-input{
+    margin-top:20px
+ }
+ .form-body .form-control{
+    width:100%;
+    height:20px;
+    border-radius: 10px;
+    padding:20px;
+ }
+.form-login button{
+    margin-top:20px;
+    /* width:80%; */
+    padding-inline:20px;
+    font-size:20px;
+    cursor:pointer;   
+    background-color: rgb(169, 7, 184);
+    color:yellow;
+}
+.form-login button:hover{
+    background-color: rgb(229, 19, 236);
+    color:rgb(253, 248, 251);
+}
+.form-dont-login{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+    padding-bottom:30px;
+}
+.form-dont-login p{
+    font-size:20px;
+    font-weight: bold;
+    color:black;
+}
+.form-dont-login p a{
+    color:yellow;
+    border:1px solid ;
+    border-radius:50px;
+    background-color:rgb(169, 7, 184);
+    padding:5px;
+}
+/* ---------------------login-form end---------- */
+ul li a .open-login:hover .login-form{
+    display:block;
+}
+.top-navigation a{
+    color:antiquewhite;
+    text-decoration:none;
+    padding-right:20px; 
+}
+.top-navigation-right ul{
+    list-style: none;
+}
+.top-navigation-right ul li{
+    display:inline-block;
+    padding-inline:10px;
+}
+.top-navigation-right ul li a{
+    font-weight: bolder;
+    font-size:20px;
+}
+
+/*------------ top navigation end --------------*/
+/* nav started */
+nav{
+    /* background-color: rgb(88, 88, 238); */
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    /* position:fixed; */
+}
+h2{
+    /* width:180px; */
+    cursor:pointer;
+}
+nav .logo img{
+    width:5vw;
+    padding:10px;
+    cursor:pointer;
+}
+ nav ul{
+    list-style: none;
+   /* width:100%; */
+   /* text-align:right;
+   padding-right: 60px; */
+ }
+ nav ul li{
+    display:inline-block;
+    padding:40px;
+    padding-top:35px;
+ }
+ nav ul li a{
+    text-decoration:none;
+    color:rgb(240, 11, 137);
+    font-size:20px;
+    font-weight:bold;
+ }
+ ul li  #search{
+    width:20vw;
+    height:30%;
+    border-radius:30px;
+    border-color:black;
+    padding-inline: 20px;
+ }
+/* nav end */
+/* header end */
+/* body part tarted */
+.body-part{
+    /* height:100vh;
+    width:100%; */
+ /* background-color:rgb(230, 67, 230); */
+}
+
+/* first-part started */
+.first-part{
+    height:85vh;
+    width:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('image/backgroundimage.webp');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.first-part .first-part-writing{
+    /* color:antiquewhite;
+    width:40%;
+    position:relative;
+    top:30%;
+    text-align: center;  
+    padding-left:90px;  */
+
+    padding-inline:20%;
+    color:white;
+    position:absolute;
+    top:50%;
+    transform:translate(-50% -50%);
+    text-align:center;
+}
+.first-part .first-part-writing h1{
+    font-size:7vmin;
+}
+.first-part .first-part-writing p{
+    font-size:2.5vmin;
+    margin:10px 0 40px;
+    /* margin-top:10px ; */
+    font-size:2.5vmin;
+}
+
+/* first-part end */
+
+/* second-part started */
+.second-part{
+    padding-top:90px;
+    width:80%;
+    /* height:50vh; */
+    text-align:center;
+    margin:auto;
+}
+.second-part h1{
+    font-size:6vmin;
+}
+.second-part .second-part-row{
+    display:flex;
+    justify-content: space-between;
+    margin-top:50px;
+}
+.second-part .second-part-row .col{
+    flex-basis:41%;
+    border:1px solid black;
+    border-radius:10px;
+    box-sizing: border-box;
+    padding:10px;
+    background-color:rgb(235, 210, 224);
+}
+/* second-part end */
+
+/* Enrole section started */
+.rent-room{
+    width:80%;
+    height:40%;
+    padding-top:90px;
+    margin:100px auto;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("image/mm.png") ;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align:center;
+    border-radius:10px;
+}
+.rent-room h1{
+    padding-top:90px;
+    font-size:5vmin;
+    color:antiquewhite;
+    margin-bottom: 50px;
+}
+.rent-room a{
+    color:antiquewhite;
+    text-decoration:none;
+    font-size:3vmin;
+    border:1px solid black;
+    padding:5px;
+}
+/* Enrole section end */
+
+/* Footer section started */
+.about-contact{
+    height:15%;
+   background-color:black;
+   color:white;
+   display:flex;
+   justify-content: space-around;
+}
+.about-contact .column-about{
+width:50%;
+}
+.about-contact h1{
+    font-size: 3.5vmin;
+}
+.about-contact a{
+    color:rgb(228, 7, 7);
+    text-decoration:none;
+}
+.about-contact .column-contact{
+    /* width:50%; */
+}
+
+/* Footer section end */
+/* body part :end */
+/* ---------------------home page end ------------------------------- */
+
+/* -----------ABOUT PAGE started------------------------------ */
+.first-part-about{
+    height:30vh;
+    width:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('image/backgroundimage.webp');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.first-part-about .first-part-writing{
+    padding-inline:20%;
+    color:white;
+    position:absolute;
+    top:30%;
+    left:25%;
+    transform:translate(-50% -50%);
+    text-align:center;
+    font-size:7vmin;
+}
+.about-part{
+    padding-top:90px;
+    width:50%;
+    /* height:50vh; */
+    text-align:center;
+    margin:auto;
+    margin-bottom:90px;
+}
+.about-part h1{
+    font-size:6vmin;
+}
+.about-part .about-part-written{
+    display:flex;
+    justify-content: space-between;
+    margin-top:25px;
+    border:2px solid black;
+    padding:10px;
+    font-size:2vh;
+    background-color:rgb(235, 210, 224);
+}
+.about-part .about-part-written:hover{
+    box-shadow: 0 0 30px 0px rgba(0,0,0,0.5);
+}
+/* .about-part .about-part-written p{
+    width:40%;
+}
+.about-part .about-part-written img{
+    position:relative;
+    top:0%;
+    left:5%;
+} */
+
+/*------------------------------------------------- ABOUT PAGE end ---------------------------------------*/
+
+/*------------- Rent page started--------------------- */
+.rent-list{
+    /* margin-inline: 50px; */
+    /* background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('image/backgroundimage.webp');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover; */
+}
+.rent-list h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(72, 72, 122);
+}
+.rent-list .box-container{
+    margin-inline: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   /* display: grid; */
+   /* grid-template-columns: repeat(auto-fit, 27rem); */
+   /* gap:1.5rem; */
+}
+.rent-list .box-container .room_box{
+    text-align: center;
+    /* flex-basis: 41%; */
+    /* padding:1px; */
+    box-shadow: 2px 2px;
+    border:2px solid rgb(139, 138, 138);
+    margin-bottom: 20px;
+}
+.rent-list .box-container .room_box img{
+    height:20rem;
+    width:20rem;
+}
+.room_box .view{
+    background-color: blue;
+    padding:10px;
+    font-weight: bold;
+    color:azure
+}
+
+
+/*------------- Rent page end--------------------- */
+
+
+
+/*----------Register Page Started----------------*/
+.form-container-first{
+    height:80%;
+    background: url("image/signup.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid red; */
+    /* min-height: 100vh; */
+}
+.form-container{
+    /* width:30vw; */
+    background-color:rgba(0,0,0,0.5);
+    position:relative;
+}
+.form-container .title{
+    font-size:20px;
+    text-align:center;
+    border-bottom: 3px solid red;
+    margin-bottom:20px;
+    color:antiquewhite;
+}
+.form-container .inputs{
+    padding-bottom:10px;
+    color:antiquewhite;
+    font-weight:bold;
+    font-size:20px;
+}
+#owr{
+    padding-inline: 20px;
+}
+/* .form-container .inputs #fname{
+    width:100%;
+} */
+.form-container .inputs .inn{
+    font-weight:bold;
+    /* color:antiquewhite; */
+    font-size:20px;
+}
+.form-container .inputs #f_name,#l_name,#location,#num,#mail,#pass, #cpass{
+    width:50%;
+    height:30px;
+}
+form .r-submit #btn{
+ width:70px;
+ height:40px;
+}
+
+/*-------------Register page End------------*/
+/*-------------Admin page start------------*/
+/*-------------navigation start----------*/
+
+.logout{
+    padding-top:35px;
+    /* padding-bottom: 100px; */
+}
+.logout #open-logout{
+    /* color:red; */
+    font-size:2vw;
+    color:antiquewhite;
+    text-decoration:none;
+    /* padding-top:35px; */
+}
+#adnv{
+    background-color: rgb(4, 4, 44);
+}
+/*----------navigation end------------*/
+
+/* .btn_Add{
+    margin-top:50px;
+    margin-left:80px;
+    padding: 10px;
+    background-color: blue;
+} */
+/* .btn_Add a{
+    color:whitesmoke;
+    font-weight: bolder;
+    font-size:2.5vh;
+    text-decoration: none;
+} */
+/* .u_container .title_user{
+    padding-top:100px;
+    display: flex;
+    justify-content: center;
+
+} */
+
+/*----------Admin home start------------*/
+.number-user{
+    margin-inline: 50px;
+    display:flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-top:100px;
+
+}
+.card-body{
+    flex-basis:21%;
+    border:1px solid black;
+    border-radius:10px;
+    box-sizing: border-box;
+    padding:100px;
+    background-color:rgb(235, 210, 224);
+    text-align: center;
+}
+.card-body h4{
+    padding-top:10px;
+    color:red;
+    font-size:20px;
+    font-weight: bolder;
+}
+
+/*----------Admin home end------------*/
+
+.admin_Table, th, td{
+    /* margin-top: 10px; */
+    width: 80px;
+    margin:auto;
+    font-size: 20px;
+    padding:10px;
+    text-align: center;
+    border-bottom: 0.5vh solid rgba( 0, 0, 0, 0.5 );
+    border-collapse:collapse;
+}
+.admin_Table td {
+    color:rgb(71, 70, 70);
+}
+ #bu{
+    margin-bottom: 10px;
+}
+#bu, #bd ,a{
+    font-size:2vh;
+    text-decoration:none;
+    border:none;
+    padding:5px;
+} 
+#bu a{
+    background-color:blue;
+    color:antiquewhite;
+}
+#bd a{
+    background-color: red;
+    color:antiquewhite
+}
+/*-------------admin page End------------*/
+
+
+/*-----------Owner page Started-------------*/
+
+/*---------Owner Home page Started-----------*/
+.property-title{
+    margin-top:50px;
+    margin-bottom:50px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:grey;
+}
+
+.P-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.owner_Table tr th, td{
+    padding-inline: 30px;
+}
+td img{
+    max-width: 100px;
+    max-height: 100px;
+}
+/*---------Owner Home page End-----------*/
+
+/*---------Owner Add property Started------------*/
+/* .form_start{
+    border:2px solid red;
+} */
+.Owner_containers{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.owner_title{
+    margin-top:50px;
+    margin-bottom:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.property_form{
+    /* border:2px solid rgb(212, 55, 173); */
+    /* width:80% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    /* margin-left:50%; */ 
+}
+.property_form .inputs{
+    /* padding:10px; */
+    flex-basis: 41%;
+}
+.inns{
+    font-size:25px;
+}
+#type,#pic,#loc,#amt,#desc{
+    width:500px;
+    height:40px;
+}
+.r-submit{
+    padding-right: 580px;
+    /* padding:40px; */
+}
+/*---------Owner Add property Ens------------*/
+
+/*-----------Owner page End-------------*/
+
